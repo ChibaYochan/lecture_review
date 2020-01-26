@@ -54,10 +54,11 @@
               </div>
             </div>
             <form action="update.php" method="post">                
-              <p>学科：<?php echo $Department; ?></p> 
-              <p>セメスター：<?php echo $Semester; ?></p>
-              <p>授業名：<?php echo $Lecture; ?>
+              <h3>学科：<?php echo $Department; ?></h3> 
+              <h3>セメスター：<?php echo $Semester; ?></h3>
+              <h3>授業名：<?php echo $Lecture; ?></h3>
               <div class="input-group">
+                <h3>
                 <label for="score">授業の点数を入力：</label>
                 <select name="score">
                   <option value="1">1点</option>
@@ -71,12 +72,13 @@
                   <option value="9">9点</option>
                   <option value="10">10点</option>
                 </select>
+                </h3>
               </div>
-              
+              <h3>
               <label for="review">レビューを入力：</label><br>
-              <textarea name="review"　rows="4" cols="40"><?php echo $Review; ?></textarea>
-
-              <?php echo '<input type="hidden" name="id" value="'.$review_id.'" />';?>
+              <textarea name="review"　rows="20" cols="80"><?php echo $Review; ?> </textarea>
+              </h3>
+              <?php echo '<input type="hidden" name="id" value="'.$review_id.'" />'?>
               <input type="submit" value="送信" />
             </form>
           </div>
