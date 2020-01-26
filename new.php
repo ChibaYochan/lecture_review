@@ -29,6 +29,8 @@
       $params = array(':department' => $department, ':score' => $score, ':lecture' => $lecture, ':semester' => $semester, ':review' => $review);
 
       $stmt -> execute($params);
+      $review_id = $dbh->lastInsertId();
+      header('Location: show.php?id='.$review_id);
       
           ?>
     </form>

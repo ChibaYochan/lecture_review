@@ -20,7 +20,7 @@
 
       $stmt -> execute($params);
 
-      header('Location: sems.html');
+      header('Location: show.php?id='.$id);
           ?>
     </form>
   <body>

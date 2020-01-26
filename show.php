@@ -23,7 +23,7 @@
             </div>
             <div id="nav1" class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
-					<li><a href="top.html">トップ</a></li>
+					<li><a href="sems.html">トップ</a></li>
 					<li><a href="sems.html">セメスター一覧</a></li>
                     <li><a href="new.html">新規入力</a></li>
                 </ul>

@@ -38,7 +38,7 @@
         </div>
         <div id="nav1" class="collapse navbar-collapse" >
             <ul class="nav navbar-nav">
-              <li><a href="top.html">トップ</a></li>
+              <li><a href="sems.html">トップ</a></li>
               <li><a href="sems.html">セメスター一覧</a></li>
               <li><a href="new.html">新規入力</a></li>
             </ul>
@@ -58,7 +58,7 @@
               <p>セメスター：<?php echo $Semester; ?></p>
               <p>授業名：<?php echo $Lecture; ?>
               <div class="input-group">
-                <label for="score">授業の点数を入力</label>
+                <label for="score">授業の点数を入力：</label>
                 <select name="score">
                   <option value="1">1点</option>
                   <option value="2">2点</option>
@@ -73,10 +73,9 @@
                 </select>
               </div>
               
-              <div class="input-group">
-                <label for="review">レビューを入力</label>
-                <textarea name="review"></textarea>
-              </div>
+              <label for="review">レビューを入力：</label><br>
+              <textarea name="review"　rows="4" cols="40"><?php echo $Review; ?></textarea>
+
               <?php echo '<input type="hidden" name="id" value="'.$review_id.'" />';?>
               <input type="submit" value="送信" />
             </form>
