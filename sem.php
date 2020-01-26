@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="itiran.php">レビューアプリ</a>
-            </dfiv>
+            </div>
             <div id="nav1" class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
                     <li><a href="top.html">トップ</a></li>
