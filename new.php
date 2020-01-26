@@ -29,8 +29,7 @@
       $params = array(':department' => $department, ':score' => $score, ':lecture' => $lecture, ':semester' => $semester, ':review' => $review);
 
       $stmt -> execute($params);
-
-      header('Location: sems.html');
+      
           ?>
     </form>
   <body>
