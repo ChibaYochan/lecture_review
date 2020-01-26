@@ -76,7 +76,7 @@
               </div>
               <h3>
               <label for="review">レビューを入力：</label><br>
-              <textarea name="review"　rows="20" cols="80"><?php echo $Review; ?> </textarea>
+              <textarea name="review" rows="10" cols="80"><?php echo $Review; ?> </textarea>
               </h3>
               <?php echo '<input type="hidden" name="id" value="'.$review_id.'" />'?>
               <input type="submit" value="送信" />
