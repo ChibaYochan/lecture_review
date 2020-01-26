@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="itiran.php">レビューアプリ</a>
+                <a class="navbar-brand" href="sems.html">レビューアプリ</a>
             </div>
             <div id="nav1" class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
           # sql 結果を変数に格納
           $res = $dbh->query($sql);
           foreach($res as $row){
-              echo '<p><a href="show.php?id='.$row['id'].'">'.$row['department'].'/'.$row['lecture'].'</a></p>';
+              echo '<h3 class="border"><a href="show.php?id='.$row['id'].'">'.$row['department'].'/'.$row['lecture'].'</a></h3>';
               echo '<br>';
           }
         ?>
