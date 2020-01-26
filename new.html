@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <title>レビュー入力</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="itiran.php">レビューアプリ</a>
+        </div>
+        <div id="nav1" class="collapse navbar-collapse" >
+            <ul class="nav navbar-nav">
+              <li><a href="top.html">トップ</a></li>
+              <li><a href="sems.html">セメスター一覧</a></li>
+              <li><a href="new.html">新規入力</a></li>
+            </ul>
+        </div>
+      </nav>
+        <div class="container">
+          <div class="row">
+            <div class="container">
+              <div class="row">
+                <div class="row" style="background:skyblue;">
+                  <h2><p style="text-align:center">レビュー入力</p></h2>
+                </div>
+              </div>
+            </div>
+            <form action="new.php" method="post">
+              <div class="input-group">
+                <label for="school_subject">学科を選択</label>
+                <select name="department">
+                  <option value="経営情報科学科">経営情報科学科</option>
+                  <option value="プロジェクトマネジメント学科">プロジェクトマネジメント学科</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="semester">セメスターを選択</lable>
+                <select name="semester">
+                  <option value="1">1s</option>
+                  <option value="2">2s</option>
+                  <option value="3">3s</option>
+                  <option value="4">4s</option>
+                  <option value="4">5s</option>
+                  <option value="4">6s</option>
+                  <option value="4">7s</option>
+                  <option value="4">8s</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="lecture">授業名を入力</label>
+                <input type="text" name="lecture"/>
+              </div>
+              <div class="input-group">
+                <label for="score">授業の点数を入力</label>
+                <select name="score">
+                  <option value="1">1点</option>
+                  <option value="2">2点</option>
+                  <option value="3">3点</option>
+                  <option value="4">4点</option>
+                  <option value="5">5点</option>
+                  <option value="6">6点</option>
+                  <option value="7">7点</option>
+                  <option value="8">8点</option>
+                  <option value="9">9点</option>
+                  <option value="10">10点</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="review">レビューを入力</label>
+                <textarea name="review"></textarea>
+              </div>
+              <input type="submit" value="送信" />
+            </form>
+          </div>
+        </div>
+
+     
+    </body>
+</html>
